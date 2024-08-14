@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'BenzinBold';
+	src: url('./BenzinBold/benzin-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('./BenzinBold/benzin-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./BenzinBold/benzin-bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./BenzinBold/benzin-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./BenzinBold/benzin-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./BenzinBold/benzin-bold.svg#benzin-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}

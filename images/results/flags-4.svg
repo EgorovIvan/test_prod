@@ -1,0 +1,20 @@
+<svg width="189" height="207" viewBox="0 0 189 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="maps-and-flags">
+<path id="Vector" d="M7.99624 29.5C7.99624 26.968 16.5 16.2624 16.5 16.2624L7.99624 2.93697C7.39376 1.54654 8.42493 0 9.95477 0H115.954H128.738C131.092 0 133 1.88669 133 4.21425C133 6.54158 131.092 9.11818 128.738 9.11818V59H9.95502C8.42517 59 7.39376 57.453 7.99624 56.0628L16.5 42.7814C16.5 42.7814 7.99624 32.032 7.99624 29.5Z" fill="url(#paint0_linear_175_1400)"/>
+<path id="Vector_2" d="M124.286 76H165V17H124.286V13H120V71.8C120 74.1195 121.919 76 124.286 76Z" fill="url(#paint1_linear_175_1400)"/>
+<path id="Vector_3" d="M133 4C133 6.39334 131.06 8.33333 128.667 8.33333H124.333C121.94 8.33333 120 10.2733 120 12.6667C120 15.06 121.94 17 124.333 17H133V4Z" fill="#FFD482"/>
+<path id="Vector_4" d="M159 17H165V76H159V17Z" fill="#FFD482"/>
+<path id="Vector_5" d="M164.333 9H165.667C166.403 9 167 10.6419 167 12.6668V203.333C167 205.358 166.403 207 165.667 207H164.333C163.597 207 163 205.358 163 203.333V12.6668C163 10.6419 163.597 9 164.333 9Z" fill="#764C2F"/>
+<path id="Vector_6" d="M164.333 9H165.667C166.403 9 167 9.89556 167 11V13H163V11C163 9.89556 163.597 9 164.333 9Z" fill="#764C2F"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_175_1400" x1="52.9649" y1="37.7239" x2="95.9561" y2="-70.2728" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E1A17E"/>
+<stop offset="1" stop-color="#764C2F"/>
+</linearGradient>
+<linearGradient id="paint1_linear_175_1400" x1="136.228" y1="53.2814" x2="202.098" y2="-2.42543" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E1A17E"/>
+<stop offset="1" stop-color="#764C2F"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,113 @@
+.video {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 0 4rem;
+  max-width: 90rem;
+  height: auto;
+  background: linear-gradient(180deg, #8C5630 0%, #DAC4A3 50%);
+  overflow-x: clip;
+
+  @media (max-width: 750px) {
+    padding: 4rem 0 3rem;
+    max-width: 23.4375rem;
+    height: auto;
+    background: #DAC4A3;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: -12.5rem;
+    right: -9.1rem;
+    width: 33rem;
+    height: 38rem;
+    background: url(../images/video/ticket.webp) no-repeat;
+    background-size: contain;
+    z-index: 100;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../images/video/ticket@2x.webp) no-repeat;
+      background-size: contain;
+    }
+
+    @media (max-width: 750px) {
+      bottom: -1.2rem;
+      right: -5.1rem;
+      width: 13rem;
+      height: 7rem;
+      background: url(../images/video/ticket-mobile.webp) no-repeat;
+      background-size: contain;
+
+      @media (min-resolution: 2dppx) {
+        background: url(../images/video/ticket-mobile@2x.webp) no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+    color: #1F1F1F;
+
+    @media (max-width: 750px) {
+      margin-bottom: 2rem;
+      color: #764C2F;
+    }
+  }
+
+  &__frame {
+    position: relative;
+    width: 55.8rem;
+    height: 35.5rem;
+    border-radius: 2.5rem;
+    border: 16px solid #FFC581;
+    overflow: hidden;
+
+    @media (max-width: 750px) {
+      width: 18.8125rem;
+      height: 11.6875rem;
+      border-radius: 0.6875rem;
+      border: 4px solid #FFC581;
+    }
+  }
+}
+
+.video .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.main-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 101%;
+  height: 101%;
+  background: url(../images/video/video.webp) no-repeat;
+  background-size: cover;
+  background-position-y: -0.3rem;
+  background-position-x: -0.3rem;
+  cursor: pointer;
+  z-index: 10;
+
+  @media (min-resolution: 2dppx) {
+    background: url(../images/video/video@2x.webp) no-repeat;
+    background-size: cover;
+    background-position-y: -0.3rem;
+    background-position-x: -0.3rem;
+  }
+}
+
+.main-lite-youtube {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.lite-youtube-fallback {
+}

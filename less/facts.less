@@ -1,0 +1,138 @@
+.facts {
+  position: relative;
+  margin: 0 auto;
+  padding: 2rem 0 5rem;
+  max-width: 90rem;
+  height: auto;
+  background: #DAC4A3;
+
+  @media (max-width: 750px) {
+    padding: 1.25rem 0 3.3rem;
+    max-width: 23.4375rem;
+  }
+
+  &__img {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    width: 20.85rem;
+    height: 11.33344rem;
+    background: url(../images/facts/ticket.webp) no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../images/facts/ticket@2x.webp) no-repeat;
+      background-size: contain;
+    }
+
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 3.5rem;
+    color: #764C2F;
+
+    @media (max-width: 750px) {
+      margin-bottom: 3.75rem;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+
+    @media (max-width: 750px) {
+      grid-template-columns: 1fr;
+      gap: 4.5rem;
+    }
+  }
+}
+
+.facts .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.facts .content {
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+
+  &__item:nth-child(1) .content__item-img {
+    margin-bottom: 1.5rem;
+    width: 5rem;
+    height: 5rem;
+    background: url(../images/facts/1.webp) no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../images/facts/1@2x.webp) no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__item:nth-child(2) .content__item-img {
+    margin-bottom: 1.5rem;
+    width: 5rem;
+    height: 5rem;
+    background: url(../images/facts/2.webp) no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../images/facts/2@2x.webp) no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__item:nth-child(3) .content__item-img {
+    margin-bottom: 1.5rem;
+    width: 5rem;
+    height: 5rem;
+    background: url(../images/facts/3.webp) no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../images/facts/3@2x.webp) no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__item-text {
+    position: relative;
+    color: #000;
+    text-align: center;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.425rem */
+    letter-spacing: 0.01188rem;
+  }
+
+  &__item-text span {
+    position: relative;
+  }
+  
+  &__item-text span::after {
+    content: '';
+    position: absolute;
+    top: 53%;
+    right: -80%;
+    transform: translate(-50%, -50%);
+    width: 1.125rem;
+    height: 1.125rem;
+    background: url(../images/facts/question.webp) no-repeat;
+    background-size: contain;
+  }
+}
+

@@ -1,0 +1,148 @@
+.sign-up {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 4.2rem;
+  max-width: 90rem;
+  height: 39.375rem;
+  background: #764C2F;
+  overflow: hidden;
+
+  @media (max-width: 750px) {
+    padding: 2.8rem 0 2.5rem;
+    max-width: 23.4375rem;
+    height: auto;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: -12rem;
+    width: 59.125rem;
+    height: 39.375rem;
+    background: url(../images/sign-up/money.webp) no-repeat;
+    background-size: contain;
+    z-index: 100;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../images/sign-up/money@2x.webp) no-repeat;
+      background-size: contain;
+    }
+
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    color: #FFF;
+    text-align: left;
+
+    @media (max-width: 750px) {
+      margin-bottom: 1.75rem;
+      width: 21rem;
+      text-align: center;
+    }
+  }
+}
+
+.sign-up .container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+
+  @media (max-width: 750px) {
+    align-items: center;
+  }
+}
+
+.sign-up .form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 31.3125rem;
+
+  @media (max-width: 750px) {
+    align-items: center;
+    width: 17.5rem;
+  }
+}
+
+.sign-up input[type="text"] {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  width: 100%;
+  font-family: "Museo Sans", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 0.375rem;
+  border: 2px solid rgba(33, 36, 96, 0.20);
+  background: #FFF;
+
+  @media (max-width: 750px) {
+    margin-bottom: 0.88rem;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.75rem;
+  }
+}
+
+.sign-up .form .button {
+  margin-bottom: 1.6rem;
+  width: 100%;
+  height: 4.625rem;
+  color: #393939;
+  text-align: center;
+  font-family: "Museo Sans", sans-serif;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 132%; /* 2.145rem */
+  cursor: pointer;
+  border: none;
+  border-radius: 0.375rem;
+  background: #DAC4A3;
+
+  @media (max-width: 750px) {
+    margin-bottom: 0.6rem;
+    height: 2.375rem;
+    font-size: 0.875rem;
+    border-radius: 0.3rem;
+  }
+}
+
+.sign-up .form .button:hover {
+  filter: brightness(1.25);
+  transition: filter .2s;
+}
+
+.sign-up .form .agree {
+  width: 29rem;
+  color: #FFF;
+  font-family: "Museo Sans", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 114.286%;
+
+  @media (max-width: 750px) {
+    width: 16.0625rem;
+    font-size: 0.625rem;
+  }
+}
+
+.sign-up .form .agree a{
+  text-decoration-line: underline;
+}
+
+.sign-up .form .checkbox {
+  width: 0.625rem;
+  height: 0.625rem;
+  flex-shrink: 0;
+  border-radius: 0.125rem;
+  border: 1px solid #1B1B1B;
+  background: #FFF;
+}

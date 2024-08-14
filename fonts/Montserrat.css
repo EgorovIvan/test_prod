@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('./Montserrat/montserrat-bold.eot');
+    src: url('./Montserrat/montserrat-bold.eot?#iefix') format('embedded-opentype'),
+    url('./Montserrat/montserrat-bold.woff') format('woff'),
+    url('./Montserrat/montserrat-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}

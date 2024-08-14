@@ -1,0 +1,326 @@
+.header {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 7rem;
+  max-width: 90rem;
+  height: 51rem;
+  background: url(../images/header/bg.webp) no-repeat;
+  background-size: contain;
+  overflow: hidden;
+
+  @media (min-resolution: 2dppx) {
+    background: url(../images/header/bg@2x.webp) no-repeat;
+    background-size: contain;
+  }
+
+  @media (max-width: 750px) {
+    padding-top: 0.6rem;
+    max-width: 23.4375rem;
+    height: 43.375rem;
+    background: url(../images/header/bg-mobile.webp) no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../images/header/bg-mobile@2x.webp) no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__logo {
+    display: none;
+    margin-bottom: 11.9rem;
+    width: 14.16381rem;
+    height: 3.875rem;
+    background-image: url(../images/header/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: 750px) {
+      display: block;
+      align-self: start;
+      margin-bottom: 4.6rem;
+      width: 4.80069rem;
+      height: 1.31338rem;
+    }
+  }
+
+  &__logo svg {
+    //width: 14.16381rem;
+    //height: 3.875rem;
+    //
+    //@media (max-width: 750px) {
+    //  width: 4.80069rem;
+    //  height: 1.31338rem;
+    //}
+  }
+
+  &__title {
+    position: relative;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    color: #FFFFFF;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 6.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 85%; /* 5.3125rem */
+    text-transform: uppercase;
+
+    @media (max-width: 750px) {
+      margin-left: 0;
+      margin-bottom: 1.25rem;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__text {
+    margin-left: 2rem;
+    margin-bottom: 5.5rem;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 1.7875rem */
+    text-transform: uppercase;
+
+    @media (max-width: 750px) {
+      margin-left: 0;
+      margin-bottom: 13.25rem;
+      width: 16rem;
+      font-size: 0.75rem;
+      text-align: center;
+    }
+  }
+}
+
+.header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+
+  @media (max-width: 750px) {
+    align-items: center;
+  }
+}
+
+.header .cls-3,
+.header .cls-4 {
+  fill: #764C2F;
+}
+
+.header .cls-1,
+.header .cls-2,
+.header .cls-5 {
+  fill: #FFF;
+}
+
+.timer-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0.5rem;
+  width: 46.5625rem;
+  height: 12.4375rem;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+    align-self: center;
+    justify-content: start;
+    gap: 0.7rem;
+    padding: 1rem 1.8rem;
+    width: 17.375rem;
+    height: 13.8125rem;
+    border-radius: 0.8125rem;
+    border: 1px solid #000;
+    background: rgba(217, 217, 217, 0.00);
+  }
+}
+
+.timer-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.timer-button__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 1.6rem;
+  text-align: center;
+  padding: 0.5rem;
+  width: 20.25rem;
+  height: 6.0625rem;
+  color: #FFFFFF;
+  font-family: 'Museo Sans', sans-serif;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 132%;
+  border-radius: 0.5625rem;
+  background: #62321D;
+
+  @media (max-width: 750px) {
+    margin-bottom: 1rem;
+    width: 13.75rem;
+    height: 3.5rem;
+    font-size: 1.125rem;
+  }
+}
+
+
+.timer-button__link:hover {
+  filter: brightness(1.25);
+  transition: filter .2s;
+}
+
+.timer-already-buy {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.286%;
+
+  @media (max-width: 750px) {
+    font-size: 0.625rem;
+  }
+}
+
+.timer-already-buy span {
+  padding: 0.1rem;
+  min-width: 1.25rem;
+  height: 1.125rem;
+  border-radius: 0.1875rem;
+  border: 1px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0.00);
+
+  @media (max-width: 750px) {
+    font-size: 0.625rem;
+  }
+}
+
+.timer-button__details {
+  color: #000000;
+  text-align: center;
+  font-family: "Museo Sans", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 132%; /* 1.485rem */
+  text-decoration-line: underline;
+
+  @media (max-width: 750px) {
+    color: #000000;
+    font-size: 0.875rem;
+  }
+}
+
+.timer-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: flex-start;
+  text-align: center;
+  width: 24.375rem;
+
+  @media (max-width: 750px) {
+    justify-content: center;
+    width: 21.1875rem;
+  }
+}
+
+.timer-title {
+  margin-bottom: 0.4rem;
+  width: 22rem;
+  color: #000000;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 157.143%;
+  letter-spacing: 0.105rem;
+  text-transform: uppercase;
+
+  @media (max-width: 750px) {
+    width: 21.1875rem;
+    text-align: center;
+    font-size:  0.625rem;
+    font-weight: 800;
+    line-height: 180%;
+    letter-spacing: 0.1125rem;
+  }
+}
+
+.timer-time {
+  color: #000000;
+  font-family: 'BenzinBold', sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  text-transform: uppercase;
+
+  @media (max-width: 750px) {
+    color: #000000;
+    font-size: 1.75rem;
+    line-height: 100% ;
+  }
+}
+
+.timer:not(.timer--dots) {
+  text-align: center;
+  width: 4.375rem;
+
+  @media (max-width: 750px) {
+    width: 3rem;
+  }
+}
+
+.timer-time i {
+  font-style: normal;
+}
+
+.timer-text {
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 164.286%;
+  letter-spacing: 0.07rem;
+
+  @media (max-width: 750px) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    line-height: 100%;
+    letter-spacing: 0.05rem;
+  }
+}
+
+.timer-dots {
+  color: #000000;
+  font-family: 'BenzinMedium', sans-serif;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4.375rem; /* 233.333% */
+  text-transform: uppercase;
+  margin: 0 0.8rem;
+
+  @media (max-width: 750px) {
+    margin-left: 0.75rem ;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height:  100%;
+  }
+}

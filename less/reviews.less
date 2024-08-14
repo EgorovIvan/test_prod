@@ -1,0 +1,220 @@
+.reviews {
+  position: relative;
+  margin: 0 auto;
+  padding: 4rem 0 5.5rem;
+  max-width: 90rem;
+  height: auto;
+  background: #DAC4A3;
+  overflow-x: clip;
+
+  @media (max-width: 750px) {
+    padding: 3rem 0;
+    max-width: 23.4375rem;
+  }
+
+  &__title {
+    margin-bottom: 5.5rem;
+    color: #764C2F;
+
+    @media (max-width: 750px) {
+      margin-bottom: 2.2rem;
+    }
+  }
+
+  &__slider {
+    align-self: start;
+    margin-bottom: 4rem;
+
+    @media (max-width: 750px) {
+      margin-bottom: 1.4rem;
+    }
+  }
+
+  &__arrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: end;
+    width: 4rem;
+
+    @media (max-width: 750px) {
+      width: 3.03175rem;
+      align-self: start;
+    }
+  }
+
+  &__arrows-prev {
+    width: 1.16rem;
+    height: 2rem;
+    background: url(../images/reviews/next.svg) no-repeat;
+    background-size: contain;
+    opacity: 0.4;
+    transform: rotate(180deg);
+
+    @media (max-width: 750px) {
+      width: 0.82rem;
+      height: 1.41425rem;
+    }
+  }
+
+  &__arrows-next {
+    width: 1.16rem;
+    height: 2rem;
+    background: url(../images/reviews/next.svg) no-repeat;
+    background-size: contain;
+    opacity: 0.4;
+
+    @media (max-width: 750px) {
+      width: 0.82rem;
+      height: 1.41425rem;
+    }
+  }
+
+  &__arrows-prev:hover,
+  &__arrows-prev:focus,
+  &__arrows-next:hover,
+  &__arrows-next:focus {
+    opacity: 1;
+  }
+}
+
+.reviews .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+
+  @media (max-width: 750px) {
+    padding-left: 1.5rem;
+  }
+}
+
+.owl-prev,
+.owl-next {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.reviews .slider-card {
+  display: grid;
+  grid-template-columns: 6.625rem 1fr;
+  gap: 2rem 1.44rem;
+  margin-right: 3rem;
+  width: 32.5rem;
+  height: auto;
+
+  @media (max-width: 750px) {
+    grid-template-columns: 4.5rem 1fr;
+    gap: 1.44rem 1rem;
+    width: 20rem;
+    margin-right: 3rem;
+  }
+
+  &__img {
+    width: 6.625rem;
+    height: 6.625rem;
+    border-radius: 6.625rem;
+
+    @media (max-width: 750px) {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 4.5rem;
+    }
+  }
+
+  &__info {
+    align-self: center;
+    color: #161616;
+    font-family: "Museo Sans", sans-serif;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+
+    @media (max-width: 750px) {
+      font-size: 0.75rem;
+    }
+  }
+
+  &__info span {
+    color: #161616;
+    font-family: "Museo Sans", sans-serif;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 129.412%;
+
+    @media (max-width: 750px) {
+      font-size: 0.625rem;
+    }
+  }
+
+  &__text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #161616;
+    font-family: "Museo Sans", sans-serif;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 145.455%;
+
+    @media (max-width: 750px) {
+      font-size: 0.75rem;
+      line-height: 133.333%;
+    }
+  }
+
+}
+
+.image-1 {
+  background: url(../images/reviews/1.webp) no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background: url(../images/reviews/1@2x.webp) no-repeat;
+    background-size: contain;
+  }
+}
+
+.image-2 {
+  background: url(../images/reviews/2.webp) no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background: url(../images/reviews/2@2x.webp) no-repeat;
+    background-size: contain;
+  }
+}
+
+.image-3 {
+  background: url(../images/reviews/3.webp) no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background: url(../images/reviews/3@2x.webp) no-repeat;
+    background-size: contain;
+  }
+}
+
+.image-4 {
+  background: url(../images/reviews/4.webp) no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background: url(../images/reviews/4@2x.webp) no-repeat;
+    background-size: contain;
+  }
+}
+
+.image-5 {
+  background: url(../images/reviews/5.webp) no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background: url(../images/reviews/5@2x.webp) no-repeat;
+    background-size: contain;
+  }
+}

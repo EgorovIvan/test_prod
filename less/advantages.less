@@ -1,0 +1,125 @@
+.advantages {
+  position: relative;
+  margin: 0 auto;
+  max-width: 90rem;
+  height: auto;
+  background: #DAC4A3;
+  overflow-x: clip;
+
+  @media (max-width: 750px) {
+    max-width: 23.4375rem;
+    height: auto;
+  }
+
+  &__img {
+    position: absolute;
+    top: -2.4rem;
+    right: 4rem;
+    width: 24rem;
+    height: 35rem;
+    background: url(../images/advantages/money.webp) no-repeat;
+    background-size: contain;
+    z-index: 15;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../images/advantages/money@2x.webp) no-repeat;
+      background-size: contain;
+    }
+
+    @media (max-width: 750px) {
+      top: 17rem;
+      width: 15.1875rem;
+      height: 23.375rem;
+      background: url(../images/advantages/money-mobile.webp) no-repeat;
+      background-size: contain;
+
+      @media (min-resolution: 2dppx) {
+        background: url(../images/advantages/money-mobile@2x.webp) no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 3.4rem;
+    color: #FFF;
+
+    @media (max-width: 750px) {
+      margin-bottom: 1.88rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-self: start;
+    flex-wrap: wrap;
+    gap: 1.13rem;
+    margin-left: 7.1rem;
+    width: 30rem;
+
+    @media (max-width: 750px) {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-self: center;
+      justify-content: start;
+      gap: 0.44rem;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    width: max-content;
+    height: auto;
+    color: #1D335B;
+    text-align: center;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.425rem */
+    letter-spacing: 0.01625rem;
+    padding: 0.6rem 1.5rem 0.8rem;
+    border-radius: 4.375rem;
+    background: #FFF;
+    cursor: pointer;
+    white-space: nowrap;
+
+    @media (max-width: 750px) {
+      padding: 0.44rem 1rem;
+      max-width: 14rem;
+      width: max-content;
+      font-size: 0.875rem;
+      text-align: center;
+      align-self: center;
+      white-space: normal;
+    }
+  }
+
+
+  &__item:hover {
+    filter: brightness(1.25);
+    transition: filter .2s;
+  }
+}
+
+.advantages .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-top: 3.14rem;
+  width: 100%;
+  height: 25.8rem;
+  border-radius: 0.625rem;
+  background: #764C2F;
+
+  @media (max-width: 750px) {
+    padding-top: 1.7rem;
+    height: 36.0625rem;
+    border-radius: 1.25rem;
+  }
+}
+

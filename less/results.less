@@ -1,0 +1,300 @@
+.results {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin: 0 auto;
+  padding-top: 8rem;
+  max-width: 90rem;
+  height: 42.625rem;
+  background: url(../images/results/bg.webp) no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: -4rem;
+  overflow-x: clip;
+  z-index: 10;
+
+  @media (min-resolution: 2dppx) {
+    background: url(../images/results/bg@2x.webp) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -4rem;
+  }
+
+  @media (max-width: 750px) {
+    padding-top: 0.5rem;
+    padding-bottom: 2.5rem;
+    max-width: 23.4375rem;
+    height: 51rem;
+    background: url(../images/results/bg-mobile.webp) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 0;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../images/results/bg-mobile@2x.webp) no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: 0;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: -10rem;
+    left: 0;
+    width: 33.625rem;
+    height: 33.8125rem;
+    background: url(../images/results/money.webp) no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background: url(../images/results/money@2x.webp) no-repeat;
+      background-size: contain;
+    }
+
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 4.5rem;
+    color: #1F1F1F;
+
+    @media (max-width: 750px) {
+      margin-bottom: 3rem;
+      color: #764C2F;
+    }
+  }
+
+  .results__content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+
+    @media (max-width: 750px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.results .content {
+
+  &__item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: 750px) {
+      height: 10rem;
+    }
+  }
+
+  &__item-text {
+    width: 15.4375rem;
+    color: #1F1F1F;
+    font-family: "Museo Sans", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 128.571%;
+
+    @media (max-width: 750px) {
+      color: #1A1A1A;
+      font-size: 0.625rem;
+      line-height: 140%;
+    }
+  }
+}
+
+.results .content__item:nth-child(1) .content__item-img {
+  position: absolute;
+  bottom: -25rem;
+  left: 9rem;
+  width: 7.5rem;
+  height: 6.43619rem;
+  background: url(../images/results/1.svg) no-repeat;
+  background-size: contain;
+
+  @media (max-width: 750px) {
+    position: relative;
+    top: 0;
+    left: 2.4rem;
+    width: 4.625rem;
+    height: 3.3125rem;
+  }
+}
+
+.results .content__item:nth-child(2) .content__item-img {
+  position: absolute;
+  top: 10.6rem;
+  left: 17rem;
+  width: 6.25rem;
+  height: 6.25rem;
+  background: url(../images/results/2.svg) no-repeat;
+  background-size: contain;
+
+  @media (max-width: 750px) {
+    position: relative;
+    top: 0;
+    left: 2.4rem;
+    width: 4.625rem;
+    height: 4.625rem;
+  }
+}
+
+.results .content__item:nth-child(2) .content__item-img::before {
+  content: '';
+  position: absolute;
+  top: -6rem;
+  left: -9rem;
+  width: 9.875rem;
+  height: 12.375rem;
+  background: url(../images/results/flags-2.svg) no-repeat;
+  background-size: contain;
+
+  @media (max-width: 750px) {
+    top: -2.1rem;
+    left: 4.7rem;
+    width: 4.1875rem;
+    height: 6.625rem;
+    background: url(../images/results/flags-2-mobile.svg) no-repeat;
+    background-size: contain;
+  }
+}
+
+.results .content__item:nth-child(3) .content__item-img {
+  position: absolute;
+  top: 6.3rem;
+  left: 14rem;
+  width: 6.875rem;
+  height: 6.875rem;
+  background: url(../images/results/3.svg) no-repeat;
+  background-size: contain;
+
+  @media (max-width: 750px) {
+    position: relative;
+    top: 0;
+    left: 2.4rem;
+    width: 4.625rem;
+    height: 4.625rem;
+  }
+}
+
+.results .content__item:nth-child(3) .content__item-img::before {
+  content: '';
+  position: absolute;
+  top: -5.5rem;
+  left: -10.5rem;
+  width: 11.0625rem;
+  height: 12.375rem;
+  background: url(../images/results/flags-3.svg) no-repeat;
+  background-size: contain;
+
+  @media (max-width: 750px) {
+    top: -2.4rem;
+    left: 5.3rem;
+    width: 4.4375rem;
+    height: 7.0625rem;
+    background: url(../images/results/flags-3-mobile.svg) no-repeat;
+    background-size: contain;
+  }
+}
+
+.results .content__item:nth-child(4) .content__item-img {
+  position: absolute;
+  top: 0.7rem;
+  left: 8.5rem;
+  width: 8.125rem;
+  height: 8.125rem;
+  background: url(../images/results/4.svg) no-repeat;
+  background-size: contain;
+
+  @media (max-width: 750px) {
+    position: relative;
+    top: 0;
+    left: 2.4rem;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.results .content__item:nth-child(4) .content__item-img::before {
+  content: '';
+  position: absolute;
+  top: -4.7rem;
+  left: -10.5rem;
+  width: 11.8125rem;
+  height: 12.9375rem;
+  background: url(../images/results/flags-4.svg) no-repeat;
+  background-size: contain;
+
+  @media (max-width: 750px) {
+    top: -2.4rem;
+    left: 5.3rem;
+    width: 5.8125rem;
+    height: 7.4375rem;
+    background: url(../images/results/flags-4-mobile.svg) no-repeat;
+    background-size: contain;
+  }
+}
+
+.results .content__item:nth-child(1) .content__item-text {
+  position: absolute;
+  width: 15.4375rem;
+  top: 16.5rem;
+  left: 17rem;
+
+  @media (max-width: 750px) {
+    top: 0;
+    left: 8rem;
+    width: 11rem;
+  }
+}
+
+.results .content__item:nth-child(2) .content__item-text {
+  position: absolute;
+  width: 14.75rem;
+  top: 8rem;
+  left: 1rem;
+  text-align: right;
+
+  @media (max-width: 750px) {
+    top: 0.3rem;
+    left: 8.5rem;
+    width: 11rem;
+    text-align: left;
+  }
+}
+
+.results .content__item:nth-child(3) .content__item-text {
+  position: absolute;
+  width: 13.5rem;
+  top: 5.7rem;
+  left: -2rem;
+  text-align: right;
+
+  @media (max-width: 750px) {
+    top: 0.3rem;
+    left: 8.5rem;
+    width: 10rem;
+    text-align: left;
+  }
+}
+
+.results .content__item:nth-child(4) .content__item-text {
+  position: absolute;
+  width: 11.6875rem;
+  top: 1rem;
+  left: -5rem;
+  text-align: right;
+
+  @media (max-width: 750px) {
+    top: 0.3rem;
+    left: 8.5rem;
+    width: 10rem;
+    text-align: left;
+  }
+}

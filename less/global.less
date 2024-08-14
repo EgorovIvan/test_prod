@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(100vw * 16 / 1440);
+
+  @media (max-width: 750px) {
+    font-size: calc(100vw * 16 / 375);
+  }
+
+}
+
+body {
+  font-family: 'HelveticaNeueCyr', sans-serif;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  text-align: center;
+  color: #000;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 2.275rem */
+  letter-spacing: 0.0175rem;
+  text-transform: uppercase;
+
+  @media (max-width: 750px) {
+    font-size: 1.25rem;
+    letter-spacing: 0.0125rem;
+  }
+}
+
+h3 {
+  color: #505050;
+  text-align: center;
+  font-family: 'Museo Sans', sans-serif;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120.215%; /* 2.254rem */
+
+  @media (max-width: 750px) {
+    font-size: 1.25rem;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 68.6rem;
+  margin: 0 auto;
+
+  @media (max-width: 750px) {
+    max-width: 21.8125rem;
+  }
+}
+
+// анимация появления блоков
+@keyframes ani {
+  0% {transform: translateX(-100%);}
+  100% {transform: translateX(0);}
+}
+
+
+

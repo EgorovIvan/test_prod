@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'BebasNeueCyrillic';
+    src: url('BebasNeueCyrillic/BebasNeueBold.otf');
+    src: local('Bebas Neue Cyrillic'), local('BebasNeueCyrillic'),
+        url('BebasNeueCyrillic/BebasNeueBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
